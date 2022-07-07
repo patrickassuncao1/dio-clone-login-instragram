@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+}
+
+:root {
+    --color-primary: #ffffff;
+    --color-secondary: #0095f6;
+    --color-tertiary: rgb(219, 219, 219);
+    --bg-color: rgb(250, 250, 250);
+    --text-color: rgb(142, 142, 142);
+    --text-color-secondary: #385185;
+    --text-color-tertiary: #262626;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: var(--bg-color);
+}
+
+main {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .flex-container {
+    width: 100%;
+    height: 100%;
+    max-width: 58.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .max-height {
+    max-height: 36.3rem;
+}
+
+main .margin-top {
+    margin-top: 3rem;
+}
+
+main .cards-content,
+main .cards-content .card form {
+    width: 100%;
+    height: 100%;
+}
+
+main .flex-container .image-content {
+    height: 36.3rem;
+    flex-basis: 21rem;
+    margin-right: 1rem;
+}
+
+
+main .flex-container .image-content img,
+main .flex-container .cards-content .card .logo-instagram img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+main .flex-container .cards-content {
+    max-width: 22rem;
+}
+
+main .flex-container .cards-content .card {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--color-tertiary);
+    border-radius: 1px;
+    padding: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--color-primary);
+    margin-bottom: 0.625rem;
+}
+
+main .flex-container .cards-content .card .logo-instagram {
+    max-width: 11rem;
+    margin: 2.1rem 0;
+}
+
+main .flex-container .cards-content .card .inputs-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+main .cards-content .card form fieldset {
+    width: 80%;
+    border: 1px solid var(--color-tertiary);
+    margin-bottom: 0.4rem;
+    background-color: var(--bg-color);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 0.2rem;
+}
+
+
+main .cards-content .card form fieldset .show-hidden{
+    padding-left: 0.5rem;
+    color: var(--text-color-tertiary);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: transparent;
+    visibility: hidden;
+    pointer-events: none;
+}
+main .cards-content .card form fieldset .show-hidden.show{
+    visibility: visible;
+    pointer-events: all;
+}
+main .cards-content .card form fieldset .show-hidden span{
+    font-size: 0.85rem;
+    
+}
+
+main .cards-content .card form fieldset legend {
+    position: absolute;
+    left: 0.5rem;
+    font-size: 0.75rem;
+    color: var(--text-color);
+    pointer-events: none;
+    transition: all ease-out 0.1s;
+}
+
+main .cards-content .card form fieldset legend.change {
+    transform: translateY(-0.5rem);
+    font-size: 0.6rem;
+} 
+
+
+
+main .flex-container .cards-content .card .inputs-field input {
+    font-size: 0.75rem;
+    padding: 0.7rem 0 0.7rem 0.5rem;
+    width: 100%;
+    outline: none;
+    background-color: var(--bg-color);
+}
+
+main .flex-container .cards-content .card .inputs-field input.input-password{
+    width: 75%;
+}
+
+main .flex-container .cards-content .card .inputs-field input.change {
+    padding: 1.1rem 0 0.3rem 0.5rem;
+}
+
+main .flex-container .cards-content .card button.btn{
+    width: 80%;
+    border-radius: 0.25rem;
+    padding: 0.5rem 0.4rem;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    cursor: pointer;
+    margin: 0.5rem 0;
+}
+
+main .flex-container .cards-content .card .lines {
+    margin-top: 0.625rem;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .flex-container .cards-content .card .line{
+    height: 1px;
+    width: 38%;
+    background-color: var(--color-tertiary);
+}
+
+main .flex-container .cards-content .card .lines p {
+    color: var(--text-color);
+    font-size: 0.81rem;
+    font-weight: 600;
+}
+
+
+main .flex-container .cards-content .card .facebook{
+    font-size: 0.9rem;
+    color: var(--text-color-secondary);
+    text-decoration: none;
+    margin: 1.5rem 0;
+}
+
+main .flex-container .cards-content .card .forgot-password{
+    font-size: 0.75rem;
+    text-decoration: none;
+    color: #00376b;
+    margin-bottom: 0.5rem;
+}
+
+main .flex-container .cards-content .paragraph{
+    padding: 0.9rem;
+    font-size: 0.875rem;
+    color: var(--text-color-tertiary);
+}
+
+main .flex-container .cards-content .paragraph.padding{
+    padding-top: 0.625rem;
+}
+
+main .flex-container .cards-content .card .paragraph a {
+    text-decoration: none;
+    color: var(--color-secondary);
+}
+
+main .flex-container .cards-content .app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main .flex-container .cards-content .app .banner-app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .flex-container .cards-content .app .banner-app .img img{
+    height: 2.5rem;
+    width: auto;
+}
+main .flex-container .cards-content .app .banner-app .img {
+    margin-top: 0.2rem;
+}
+main .flex-container .cards-content .app .banner-app .img:first-child{
+    margin-right: 0.6rem;
+}
+
+@media screen and (max-width: 750px) {
+    main .flex-container .image-content {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    main .flex-container .cards-content .card{
+        background-color: transparent;
+        border: none;
+    }
+}
