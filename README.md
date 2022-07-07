@@ -2,7 +2,7 @@
 
 ## Descrição
 
-<p align="center">🚀 Desafio de Projeto da dio 🚀, onde o desafio era recontruir a página de login do instagram. </p>
+<p align="center">🚀 Desafio de Projeto da dio 🚀, onde o desafio era desenvolver a página de login do instagram. </p>
 
 ## Para que servia esse Desafio
 
